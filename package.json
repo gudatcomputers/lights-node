@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "start": "./bin/www",
+    "dev": "nodemon ./bin/www",
     "test": "mocha",
     "lint": "standard --env mocha --fix"
   },
@@ -11,11 +12,16 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "node-upnp-utils": "0.0.5"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dirty-chai": "^2.0.1",
     "mocha": "^6.2.0",
     "nodemon": "^1.19.1",
-    "standard": "^14.0.0"
+    "standard": "^14.0.0",
+    "testdouble": "^3.12.4"
   }
 }
